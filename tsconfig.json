@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "rootDir": ".",
+        "sourceMap": true,
+        "outDir": "./build",
+        "paths": {
+            "@frontend/*": [ "src/frontend/*" ],
+            "@common/*": [ "src/common/*" ],
+            "@backend/*": [ "src/backend/*" ]
+        }
+    },
+    "include": [
+        "src"
+    ]
+}

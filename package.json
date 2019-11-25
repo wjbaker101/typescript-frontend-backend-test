@@ -1,0 +1,25 @@
+{
+    "name": "typescript-frontend-backend-test",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build:frontend": "npx tsc -p ./tsconfig.frontend.json",
+        "build:backend": "npx tsc -p ./tsconfig.backend.json",
+
+        "start:frontend": "node ./build/src/frontend/index.js",
+        "start:backend": "node ./build/src/backend/index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/node": "^12.12.11",
+        "module-alias": "^2.2.2",
+        "typescript": "^3.7.2"
+    },
+    "_moduleAliases": {
+        "@frontend": "build/src/frontend",
+        "@backend": "build/src/backend",
+        "@common": "build/src/common"
+    },
+    "devDependencies": {}
+}
